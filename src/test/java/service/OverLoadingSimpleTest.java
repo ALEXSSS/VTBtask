@@ -86,4 +86,26 @@ public class OverLoadingSimpleTest {
         }
         Assert.assertEquals("Expected 0", 0, dbEntryBufferService.getBufferSize());
     }
+
+    @Test
+    public void queueMultiThreadingTest3() throws InterruptedException {
+        Mockito.when(repository.saveAll( Matchers.<Iterable<? extends DBEntry>>any()))
+                .thenReturn(null);
+        List<Thread> executionPool = new ArrayList<>();
+
+        for (int thread_num = 0; thread_num < 20; thread_num++) {
+            executionPool.add(new Thread(() -> {
+                for (int i = 0; i < 10000; i++) {
+                    DBEntry re = new DBEntry(1,2,"TXT","DATE");
+                    dbEntryBufferService.add(re);
+                }
+            }));
+        }
+        dbEntryBufferService.add(new DBEntry());
+        executionPool.forEach(thread -> thread.start());
+        for (Thread thread : executionPool) {
+            thread.join();
+        }
+        Assert.assertEquals("Expected 0", 1, dbEntryBufferService.getBufferSize());
+    }
 }
