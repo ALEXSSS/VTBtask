@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="VTBtask:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="VTBtask.war">
-      <element id="artifact" artifact-name="VTBtask:war exploded" />
-    </root>
-  </artifact>
-</component>

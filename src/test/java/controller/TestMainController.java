@@ -49,24 +49,25 @@ public class TestMainController {
     @InjectMocks
     private MainController mainController;
 
-
+    @Mock
+    EntryService entryService;
 
     @Autowired
     DBEntryRepository repository;
 
-//    @Test
-//    public void testEntryGet() throws Exception {
-//
-//        List<DBEntry> response_data = new ArrayList<>();
-//        response_data.add(new DBEntry(1, 1, "STR", "DATE"));
-//
-//        Mockito.when(entryService.findAllEntries())
-//                .thenReturn(response_data);
-//        MvcResult result = mockMvc.perform(get("/VTB/entry/"))
-//                .andExpect(status().isOk()).andReturn();
-//        verify(entryService, times(1)).findAllEntries();
-//        verifyNoMoreInteractions(entryService);
-//    }
+    @Test
+    public void testEntryGet() throws Exception {
+
+        List<DBEntry> response_data = new ArrayList<>();
+        response_data.add(new DBEntry(1, 1, "STR", "DATE"));
+
+        Mockito.when(entryService.findAllEntries())
+                .thenReturn(response_data);
+        MvcResult result = mockMvc.perform(get("/VTB/entry/"))
+                .andExpect(status().isOk()).andReturn();
+        verify(entryService, times(1)).findAllEntries();
+        verifyNoMoreInteractions(entryService);
+    }
 
     @Test
     public void testEntryGetNotFound() throws Exception {
@@ -74,12 +75,12 @@ public class TestMainController {
         List<DBEntry> response_data = new ArrayList<>();
 
         repository.save(new DBEntry(1, 1, "dsf", "dsf"));
-//        Mockito.when(entryService.findAllEntries())
-//                .thenReturn(response_data);
+        Mockito.when(entryService.findAllEntries())
+                .thenReturn(response_data);
         MvcResult result = mockMvc.perform(get("/VTB/entry/"))
                 .andExpect(status().isNoContent()).andReturn();
-//        verify(entryService, times(1)).findAllEntries();
-//        verifyNoMoreInteractions(entryService);
+        verify(entryService, times(1)).findAllEntries();
+        verifyNoMoreInteractions(entryService);
     }
 
 

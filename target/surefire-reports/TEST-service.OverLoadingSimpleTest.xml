@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="service.OverLoadingSimpleTest" time="0.107" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="service.OverLoadingSimpleTest" time="0.072" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2017.3.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -39,11 +39,11 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="user.name" value="root"/>
-    <property name="java.class.path" value="/home/alex/idea-IU-173.3942.27/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.class.path" value="/home/alex/idea-IU-173.3942.27/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/home/alex/idea-IU-173.3942.27/lib/idea_rt.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2017.3.1 install"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2017.3.1 test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -60,5 +60,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="service.OverLoadingSimpleTest" name="queueMultiThreadingTest" time="0.107"/>
+  <testcase classname="service.OverLoadingSimpleTest" name="queueMultiThreadingTest" time="0.072"/>
 </testsuite>
