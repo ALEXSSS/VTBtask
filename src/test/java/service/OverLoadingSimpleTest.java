@@ -84,6 +84,6 @@ public class OverLoadingSimpleTest {
         for (Thread thread : executionPool) {
             thread.join();
         }
-        Assert.assertEquals("Expected 0", 1, dbEntryBufferService.getBufferSize());
+        Assert.assertEquals("Expected 0", 0, dbEntryBufferService.getBufferSize());
     }
 }
