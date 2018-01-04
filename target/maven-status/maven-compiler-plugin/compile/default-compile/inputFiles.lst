@@ -1,0 +1,11 @@
+/home/alex/Desktop/VTBtask/src/main/java/com/websystique/springmvc/repo/DBEntryRepository.java
+/home/alex/Desktop/VTBtask/src/main/java/com/websystique/springmvc/message/SimpleMessage.java
+/home/alex/Desktop/VTBtask/src/main/java/com/websystique/springmvc/configuration/CORSFilter.java
+/home/alex/Desktop/VTBtask/src/main/java/com/websystique/springmvc/controller/MainController.java
+/home/alex/Desktop/VTBtask/src/main/java/com/websystique/springmvc/service/EntryService.java
+/home/alex/Desktop/VTBtask/src/main/java/com/websystique/springmvc/configuration/MainApplicationConfiguration.java
+/home/alex/Desktop/VTBtask/src/main/java/com/websystique/springmvc/configuration/MyInitializer.java
+/home/alex/Desktop/VTBtask/src/main/java/com/websystique/springmvc/controller/InitializerController.java
+/home/alex/Desktop/VTBtask/src/main/java/com/websystique/springmvc/configuration/JPAConfig.java
+/home/alex/Desktop/VTBtask/src/main/java/com/websystique/springmvc/model/DBEntry.java
+/home/alex/Desktop/VTBtask/src/main/java/com/websystique/springmvc/service/DBEntryBufferService.java

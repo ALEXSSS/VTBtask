@@ -1,0 +1,11 @@
+com/websystique/springmvc/message/SimpleMessage.class
+com/websystique/springmvc/configuration/JPAConfig.class
+com/websystique/springmvc/configuration/MainApplicationConfiguration.class
+com/websystique/springmvc/service/EntryService.class
+com/websystique/springmvc/configuration/CORSFilter.class
+com/websystique/springmvc/controller/MainController.class
+com/websystique/springmvc/repo/DBEntryRepository.class
+com/websystique/springmvc/controller/InitializerController.class
+com/websystique/springmvc/configuration/MyInitializer.class
+com/websystique/springmvc/service/DBEntryBufferService.class
+com/websystique/springmvc/model/DBEntry.class
